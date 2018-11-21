@@ -1,27 +1,22 @@
-Agile - The Css3 Creation Engine
+YourJsLib - xxxxxxxxxx
 ======
 
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](./LICENSE)
-[![Release Version](https://img.shields.io/badge/release-2.1.0-red.svg)](https://github.com/a-jie/Agile/releases)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/a-jie/Agile/pulls)
-[![npm](https://img.shields.io/badge/npm-2.1.0-brightgreen.svg)](https://www.npmjs.com/)
-
-![Agile banner](https://github.com/a-jie/Agile/blob/master/image/banner.png?raw=true)
-
-## Using javascript generated pure CSS3
-Agile is a simple, fast and easy to use engine which uses javascript generated pure CSS3.
-Check out examples at [http://a-jie.github.io/Agile/](http://a-jie.github.io/Agile/)
-
 ## Features
-- Agile uses javascript to generate pure CSS3, without canvas, webGL or SVG.
-- Performant on mobile devices, being truly cross platform.
-- Agile’s API has high similar characteristic with actionscript 3.0, you can learn it in 10 minutes.
+很多人都想写一个自己的轮子，可是开始动手的时候你总会遇到以下问题？请用这个基本模版
+
+* 一个基本的js库应该如何编写  
+* 基本的前端项目都要哪些文件
+* 又要怎么打包发布到npm上  
+* 你的es6语法如何才能让别人识别  
+* readme应该如何编写  
+* 如何添加eslit
+* 怎么才能打包一个umd格式文件让html直接引用
 
 ## Usage
-#### Download the [minified library](https://github.com/a-jie/Agile/blob/master/build/agile.min.js) and include it in your html document.  
+#### 直接在页面引用
 
 ```html
-<script src="js/agile.min.js"></script>
+<script src="js/your-js-lib.min.js"></script>
 ```
 
 
@@ -29,56 +24,29 @@ Check out examples at [http://a-jie.github.io/Agile/](http://a-jie.github.io/Agi
 [![anix](https://nodei.co/npm/agilejs.png)](https://npmjs.org/package/agilejs)
 
 ``` 
-npm install agilejs --save
+npm install your-js-lib --save
 ... 
 
-import Agile from 'agilejs';
+import YourJsLib from 'your-js-lib';
 ```
 
-#### Create and move a circle:
+#### 使用:
 
 ```javascript
-//init Agile
-Agile.mode = '3d';
-var container = new Agile.Container('container');
-container.select = false;
-container.perspective = 1000;
-
-//create a displayobject
-var circle = new Agile.Circle(80, '#ff0000');
-circle.x = 100;
-circle.y = 120;
-container.addChild(circle);
-
-//add a keyframes
-var keyframes = new Agile.Keyframes(100, {
-	scaleX : .5,
-	scaleY : .5
-});
-circle.addFrame(1, keyframes, {
-	yoyo : true,
-	loop : -1
-}); 
+...
 ```
 
-## Building Agile
+## Build
 Node is a dependency, use terminal to install it with with:  
 
+### 打包
+
 ```javascript
-git clone git://github.com/a-jie/Proton.git
-...
 npm install
 npm run build
 ``` 
 
-and run examples 
-
-```javascript
-npm start
-//vist http://localhost:3001/examples/
-```
-
-es6 lint
+### es6 lint
 
 ```javascript
 npm run lint
