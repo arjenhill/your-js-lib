@@ -9,7 +9,7 @@ YourJsLib - xxxxxxxxxx
 * 又要怎么打包发布到npm上  
 * 你的es6语法如何才能让别人识别  
 * readme应该如何编写  
-* 如何添加eslit
+* 如何添加eslint
 * 怎么才能打包一个umd格式文件让html直接引用
 
 ## Usage
@@ -21,7 +21,6 @@ YourJsLib - xxxxxxxxxx
 
 
 #### Or install using npm 
-[![anix](https://nodei.co/npm/agilejs.png)](https://npmjs.org/package/agilejs)
 
 ``` 
 npm install your-js-lib --save
