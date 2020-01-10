@@ -1,7 +1,8 @@
-YourJsLib - xxxxxxxxxx
+YourJsLib
 ======
 
 ## Features
+
 很多人都想写一个自己的轮子，可是开始动手的时候你总会遇到以下问题？请用这个基本模版
 
 * 一个基本的js库应该如何编写  
@@ -13,6 +14,7 @@ YourJsLib - xxxxxxxxxx
 * 怎么才能打包一个umd格式文件让html直接引用
 
 ## Usage
+
 #### 直接在页面引用
 
 ```html
