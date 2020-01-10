@@ -1,7 +1,5 @@
 # YourJsLib
 
-======
-
 ## Features
 
 很多人都想写一个自己的轮子，可是开始动手的时候你总会遇到以下问题？请用这个基本模版
@@ -31,28 +29,64 @@ npm install your-js-lib --save
 import YourJsLib from 'your-js-lib';
 ```
 
-## 使用
+## 目录
 
-```javascript
-...
+```sh
+.
+├── _config.yml
+├── build # 打包后的项目文件目录
+|   ├── your-js-lib.min.js # 压缩后的js项目库文件
+|   └── your-js-lib.min.js.map # map文件
+├── node_modules # node_modules
+|   └── ... # 依赖组件
+├── src # src目录
+|   ├── core # 源码组件目录
+|   └── index.js # 入口文件
+├── .babelrc # babel配置文件
+├── .gitignore # git忽略提交
+├── .npmignore # npm发表忽略提交
+├── eslintrc.json # eslin配置及规则说明
+├── LICENSE # LICENSE
+├── package.json # 包依赖管理文件
+├── README.md # 项目使用说明文档
+└── rollup.config.js # rollup打包工具配置文档
+```
+
+## 开发
+
+开发工作时，我们一般在`src`目录中根据自己的需要创建项目文件或目录，以下两步方式对外 export。
+
+### step1
+
+```js
+// `src/core/`
+export default a or export {a, b}
+```
+
+### step2
+
+```js
+// `src/index.js
+import YourJsLib from "./core/YourJsLib";
+export default YourJsLib;
 ```
 
 ## Build
 
 Node is a dependency, use terminal to install it with with:
 
-### 打包
-
-```javascript
-npm install
-npm run build
-```
-
 ### es6 lint
 
 ```javascript
 npm run lint
 ```
+
+## 备注
+
+- 开发过程时需要根据自己的开发工具安装eslint插件
+- npm包的发布需要自己根据项目名创建
+
+欢迎大家star，提供issues，不断完善本仓库。
 
 ## License
 
