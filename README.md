@@ -33,7 +33,6 @@ import YourJsLib from 'your-js-lib';
 
 ```sh
 .
-├── _config.yml
 ├── build # 打包后的项目文件目录
 |   ├── your-js-lib.min.js # 压缩后的js项目库文件
 |   └── your-js-lib.min.js.map # map文件
